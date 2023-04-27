@@ -138,7 +138,7 @@ div.bloc2{
 }
 
 div.bloc3{
-    padding: 150px 20px 0 20px;
+    padding: 150px 20px 0 60px;
     background: url(triangle1white.svg) no-repeat center top/100%;
     background-color: var(--color2);
 }
@@ -379,6 +379,10 @@ div.social_network img:hover{
 
     div.contact_by_wathsapp *:hover{
         font-size: 17px;
+    }
+
+    div.bloc3{
+        padding: 150px 20px 0 20px;
     }
 
     div.bloc1 *{
