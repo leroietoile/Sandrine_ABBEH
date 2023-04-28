@@ -138,7 +138,7 @@ div.bloc2{
 }
 
 div.bloc3{
-    padding: 150px 20px 0 60px;
+    padding: 150px 20px 0 0px;
     background: url(triangle1white.svg) no-repeat center top/100%;
     background-color: var(--color2);
 }
@@ -203,12 +203,14 @@ div.img_topic .topic{
 
 div.portfolio{
     display: block;
-    width: 70%;
-    height: 300px;
+    width: 100%;
+    height: 400px;
     margin-bottom: 200px;
     margin-top: 50px;
     color: white;
     min-width: 200px;
+    /* box-shadow: 0px 0px 6px 6px rgba(0, 0, 0, 0.46); */
+    border-radius: 0 10px 10px 0;
 }
 
 div.portfolio1{
@@ -218,17 +220,19 @@ div.portfolio1{
 div.portfolio_describ{
     text-align: center;
     position: relative;
-    background-color: rgba(9, 9, 9, 0.605);
-    padding: 20px 40px 40px 40px;
+    background-color: rgba(9, 9, 9, 0.666);
+    padding: 40px 40px 80px 40px;
     max-height: 400px;
     min-width: 170px;
     border-bottom: #D89584 solid 5px;
+    border-right: #D89584 solid 5px;
+    border-radius: 10px;
     /* font-size: 10px; */
 }
 
 div.portfolio_describ_right{
-    top: 35%;
-    left: 20%;
+    top: 40%;
+    left: 10%;
     transition-duration: 0.5s;
 }
 
@@ -368,6 +372,7 @@ div.social_network img:hover{
         font-size: 16px;
 }
 
+
     div.cover img{
         margin-top: 30px;
         margin-bottom: 20px;
@@ -381,9 +386,9 @@ div.social_network img:hover{
         font-size: 17px;
     }
 
-    div.bloc3{
-        padding: 150px 20px 0 20px;
-    }
+    /* div.bloc3{
+        padding: 150px 20px 0 0px;
+    } */
 
     div.bloc1 *{
         font-size: 22px;
@@ -426,21 +431,20 @@ div.social_network img:hover{
     }
 
     div.portfolio_describ{
-        padding: 20px 50px 80px 50px;
+        padding: 40px 50px 100px 50px;
     }  
     
     div.portfolio_describ_right{
-        top: 15%;
-        left: 10%;
+        left: 20%;
     }
 
     div.portfolio_describ_right:hover{
-        top: 35%;
-        left: 20%;
+        top: 25%;
+        left: 10%;
     }
     
     div.portfolio2, div.portfolio4{
-        margin-left: 140px;
+        margin-left: 100px;
     }
 
     div.frame{
@@ -486,4 +490,20 @@ div.social_network img:hover{
         width: 44px;
     }
 
+}
+
+
+@media only screen and (min-width: 1025px){
+
+    div.bloc3{
+        padding: 150px 20px 0 20px;
+    }
+    
+    div.portfolio2, div.portfolio4{
+        margin-left: 140px;
+    }
+
+    div.portfolio{
+        border-radius: 10px;
+    }
 }
