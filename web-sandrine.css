@@ -471,17 +471,19 @@ div.bloc3_portf td{
 
 div.bloc3_portf img{
     display: inline-block;
-    width: 100%;
+    width:  100%;
     margin: 0;
     transition-duration: 1s;
 }
 
 div.bloc3_portf img:hover{
-    width: 200%;
+    width: 100%;
 }
 
 div.bloc3_portf td:hover{
-    margin-right: 100px;
+    display: block;
+    width: 100%;
+    /* margin-right: 100px; */
 }
 
 
@@ -657,13 +659,16 @@ div.bloc3_portf td:hover{
     div.bloc3_portf img:hover{
         width: 400%;
     }
-    
+
     div.bloc3_portf td:hover{
+        display: inline-block;
+        width: 100px;
         margin-right: 300px;
     }
 
     div.frame_table img{
         width: 130px;
+        margin-right: 100px;
     }
 
 }
