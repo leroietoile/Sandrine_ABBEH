@@ -481,7 +481,6 @@ div.bloc3_portf img:hover{
 }
 
 div.bloc3_portf td:hover{
-    display: block;
     width: 100%;
     /* margin-right: 100px; */
 }
@@ -661,9 +660,8 @@ div.bloc3_portf td:hover{
     }
 
     div.bloc3_portf td:hover{
-        display: inline-block;
-        width: 100px;
-        margin-right: 300px;
+        width: 120px;
+        margin-right: 360px;
     }
 
     div.frame_table img{
