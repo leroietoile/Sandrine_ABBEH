@@ -11,7 +11,7 @@ body{
 
 iframe{
     width: 100%;
-    height: 630px;
+    height: 690px;
 }
 
 div.center{
@@ -448,6 +448,11 @@ div.block p{
     margin: 30px 20px;
 }
 
+div.block a{
+    color: #ba3939;
+    font-weight: bold;
+}
+
 div.bloc3_portf table{
     position: relative;
     margin-left: auto;
@@ -490,7 +495,7 @@ div.bloc3_portf td:hover{
     }
 
     iframe{
-        height: 500px;
+        height: 700px;
     }
 
     div.contact_info *, div.contact *{
@@ -657,11 +662,19 @@ div.bloc3_portf td:hover{
         margin-right: 300px;
     }
 
+    div.frame_table img{
+        width: 130px;
+    }
+
 }
 
 
 @media only screen and (min-width: 1025px){
 
+    iframe{
+        height: 550px;
+    }
+    
     div.bloc3{
         padding: 150px 20px 0 20px;
     }
