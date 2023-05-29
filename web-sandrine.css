@@ -7,6 +7,7 @@ body{
     margin: 0;
     font-family: arial;
     line-height: 1.5;
+    color: #595858;
 }
 
 iframe{
@@ -111,7 +112,7 @@ div.bloc1{
     padding: 10px 20px 100px 20px;
 }
 
-div.bloc1 *{
+div.bloc1 p{
     font-size: 18px;
     color: #656565;
     max-width: 670px;
@@ -123,8 +124,10 @@ div.bloc1 *{
 .downloader{
     display: inline-block;
     text-align: center;
-    padding: 5px 30px;
-    border: #D89584 solid 2px;
+    padding: 5px 20px;
+    color: white;
+    background-color: var(--color1);
+    font-size: 16px;
     text-decoration: none;
     margin-top: 20px;
     margin-bottom: 10px;
@@ -133,9 +136,10 @@ div.bloc1 *{
 }
 
 .downloader:hover{
-    box-shadow: 0 0 8px 3px rgba(0, 0, 0, 0.2);
-    font-size: 20px;
-    border: none;
+    background-color: rgba(253, 249, 249, 0.717);
+    color: var(--color1);
+    border: var(--color1) solid 2px;
+    font-size: 17px;
 }
 
 div.bloc2{
@@ -151,14 +155,10 @@ div.bloc3{
 h2{
     font-size: 40px;
     display: inline-block;
-    /* text-align: center; */
     font-weight: bold;
     color: #ba3939;
-    /* min-width: 280px; */
     border-bottom: solid 4px #ba3939;
     margin-top: -10px;
-    /* margin-left: 300px;  juste pour pc */
-    /* color: var(--color1) */
 }
 
 div.bloc2 h2.for_mobile{
@@ -167,7 +167,6 @@ div.bloc2 h2.for_mobile{
 
 
 div.bloc2 h2.for_pc{
-    /* min-width: 0px; */
     font-size: 0;
 }
 
@@ -179,7 +178,6 @@ div.img_topic{
 div.img_topic .img_contain{
     display: block;
     width: 100%;
-    /* background-color: blue; */
 }
 
 div.img_topic .topic{
@@ -190,12 +188,10 @@ div.img_topic .topic{
 }
 
 .button{
-    color: #f1eeee;
+    color: var(--color1);
     text-decoration: none;
-    border: #595858 solid 2px;
-    border-radius: 5px;
-    background-color: #595858;
-    padding: 10px 20px;
+    border-bottom: var(--color1) solid 2px;
+    padding: 10px 10px;
     text-align: center;
     font-size: 15px;
     font-weight: bold; 
@@ -232,7 +228,6 @@ div.portfolio_describ{
     border-bottom: #D89584 solid 5px;
     border-right: #D89584 solid 5px;
     border-radius: 10px;
-    /* font-size: 10px; */
 }
 
 div.portfolio_describ_right{
@@ -252,18 +247,17 @@ div.portfolio_describ_left{
 }
 
 div.portfolio a{
-    color: white;
+    color: var(--color1);
     text-decoration: none;
-    border: white solid 2px;
+    border: var(--color1) solid 2px;
     padding: 10px 13px;
-    background-color: #4d4b4bbf;
+    background-color: #1716169d;
     transition-duration: 0.3s;
 }
 
 div.portfolio a:hover{
-    color: #e9b439;
-    border: none;
-    border-bottom: #e9b439 solid 4px;
+    border-right: none;
+    border-top: none;
     font-size: 17px;
     background-color: #ffffff00;
 }
@@ -362,6 +356,18 @@ div.social_network img:hover{
     width: 30px;
 }
 
+.reveal{
+    opacity: 0;
+    transition-duration: 1s;
+    animation-timing-function: ease-in-out;
+    transform: translate(30px, -30px);
+}
+
+.reveal-visible{
+    opacity: 1;
+    transform: translate(0, 0);
+}
+
 
 /* ____________PAGE PORTFOLIO_____________ */
 
@@ -380,6 +386,7 @@ div.header_portf .name{
 }
 
 div.header_portf .name p{
+    display: block;
     margin: 0;
     font-size: 30px;
     font-weight: bold;
@@ -400,7 +407,6 @@ div.bloc1_portf{
 }
 
 div.back_home{
-    /* position: absolute; */
     display: inline-block;
     text-align: left;
     margin: 10px 0 0 -10px;
@@ -425,6 +431,7 @@ div.back_home a{
 div.bloc1_portf h1{
     font-size: 30px;
     margin-top: 30px;
+    color: #ba3939;
 }
 
 div.portf_bloc_presentation{
@@ -453,8 +460,13 @@ div.block a{
     font-weight: bold;
 }
 
+div.bloc3_portf{
+    display: none;
+}
+
 div.bloc3_portf table{
-    position: relative;
+    position: flex;
+    justify-content: space-around;
     margin-left: auto;
     margin-right: auto;
     margin-bottom: 80px;
@@ -483,6 +495,40 @@ div.bloc3_portf img:hover{
 div.bloc3_portf td:hover{
     width: 100%;
     /* margin-right: 100px; */
+}
+
+div.img_screen{
+    width: 60%;
+    margin: 20px auto;
+    display: flex;
+    justify-content: space-around;
+
+    border-radius: 10px;
+    border: solid #D89584 15px;
+    transition-duration: .4s;
+}
+
+div.scroll_btn_container{
+    padding: 50% 20px 0 20px;
+}
+
+img.visible_pic{
+    width: 100%;
+    display: block;
+}
+
+div.img_screen img.scroll_x_buton{
+    width: 30px;
+    position: relative;
+}
+
+img#left_scroll{
+    transform: rotate(-90deg);
+
+}
+
+img#right_scroll{
+    transform: rotate(90deg);
 }
 
 
@@ -518,13 +564,19 @@ div.bloc3_portf td:hover{
         font-size: 17px;
     }
 
-    /* div.bloc3{
-        padding: 150px 20px 0 0px;
-    } */
-
-    div.bloc1 *{
+    div.bloc1 p{
         font-size: 22px;
     }
+
+    .downloader{
+        padding: 5px 20px;
+        font-size: 17px;
+    }
+    
+    .downloader:hover{
+        font-size: 18px;
+    }
+    
 
     div.bloc2 h2.for_mobile{
         font-size: 0;
@@ -553,7 +605,7 @@ div.bloc3_portf td:hover{
     }
 
     .button:hover{
-        font-size: 20px;
+        font-size: 19px;
     }
 
     div.portfolio{
@@ -667,6 +719,10 @@ div.bloc3_portf td:hover{
     div.frame_table img{
         width: 130px;
         margin-right: 100px;
+    }
+
+    div.img_screen img.scroll_x_buton{
+        width: 40px;
     }
 
 }
